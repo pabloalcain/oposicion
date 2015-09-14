@@ -14,8 +14,11 @@ all: oposicion.pdf oposicion.tar.gz
 # -interactive=nonstopmode keeps the pdflatex backend from stopping at a
 # missing file reference and interactively asking you for an alternative.
 
-%.pdf: %.tex fig/*
-	latexmk -pdf -pdflatex="pdflatex" -use-make $<
+%.pdf: %.ps
+	ps2pdf $< $@
+
+%.ps: %.tex fig/*
+	latexmk -ps -use-make $<
 
 %.tar.gz: fig/* %.tex 
 	tar czvf $@ $^
