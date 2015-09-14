@@ -11,7 +11,7 @@
 
 %% Estilo
 \RequirePackage{fancyhdr}
-\RequirePackage{geometry}
+\RequirePackage[includefoot, includehead]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{float}
 \RequirePackage{psfrag}
@@ -38,11 +38,11 @@
 \renewcommand{\familydefault}{\sfdefault}
 \geometry{
   left=1.0cm,
-  top=2.0cm,
+  top=0.0cm,
   head=1.0cm,
-  foot=0.5cm,
+  foot=1.0cm,
   right=1.0cm,
-  bottom=1.1cm
+  bottom=0.5cm
 }
 
 \pagestyle{fancy}
