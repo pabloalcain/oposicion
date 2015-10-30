@@ -5,3 +5,4 @@
 *.fdb_latexmk
 *.log
 *.tar.gz
+!fig/una_figura.pdf

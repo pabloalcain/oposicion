@@ -33,6 +33,7 @@
 \graphicspath{{./fig/}, {./}}
 \def\DeclareAuthorVariable#1{\@namedef{#1}##1{\@namedef{@#1}{##1}}}
 \DeclareAuthorVariable{nombre}
+\DeclareAuthorVariable{cargo}
 
 % Estilo
 \renewcommand{\familydefault}{\sfdefault}
@@ -46,7 +47,7 @@
 }
 
 \pagestyle{fancy}
-\lhead{}
+\lhead{\@cargo}
 \chead{}
 \rhead{\@nombre}
 \lfoot{}

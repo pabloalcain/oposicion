@@ -3,7 +3,22 @@
 # file of the given name existing.
 .PHONY: all clean clean-all
 
-all: oposicion.pdf oposicion.tar.gz
+default:
+	@echo "\
+Hay tres opciones:\n\n\
+  make install para instalar (sólo en Linux)\n\
+  make test para compilar una prueba\n\
+  make uninstall para desinstalar (sólo en Linux)"
+
+install:
+	mkdir -p ~/texmf/tex/latex/base
+	cp oposicion.cls ~/texmf/tex/latex/base
+	texhash
+
+test: oposicion.pdf oposicion.tar.gz
+
+uninstall:
+	rm ~/texmf/tex/latex/base/oposicion.cls
 
 # MAIN LATEXMK RULE
 
