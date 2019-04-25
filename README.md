@@ -1,4 +1,5 @@
-#Clase para pruebas de oposición del DF - UBA
+# Clase para pruebas de oposición del DF - UBA
+
 Esto está bastante verde todavía, pero se puede usar.
 Setea los márgenes de una forma bastante agresiva,
 pero permite agregar encabezados y pone el interlineado
